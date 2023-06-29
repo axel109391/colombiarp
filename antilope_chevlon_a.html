@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pagina Producto</title>
+		<link rel="stylesheet" href="antilope_chevlon.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Concesionario Colombia RP</h1>
+		</header>
+
+		<div class="container-title">Antilope Chevlon </div>
+
+		<main>
+			<div class="container-img">
+				<img
+					src="imagenes/WhatsApp Image 2023-06-16 at 6.42.21 PM (1).jpg"
+					alt="imagen-producto"
+				/>
+			</div>
+			<div class="container-info-product">
+				<div class="container-price">
+					<span>$3,500</span>
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+
+				<div class="container-add-cart">
+					<div class="container-quantity">
+						<input
+							type="number"
+							placeholder="1"
+							value="1"
+							min="1"
+							class="input-quantity"
+						/>
+						<div class="btn-increment-decrement">
+							<i class="fa-solid fa-chevron-up" id="increment"></i>
+							<i class="fa-solid fa-chevron-down" id="decrement"></i>
+						</div>
+					</div>
+					<button class="btn-add-to-cart">
+						<i class="fa-solid fa-plus"></i>
+						Añadir al carrito
+					</button>
+				</div>
+
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<p>
+							Precio: $3,500</p>
+                            <P>Tipo de vehiculo: Carro</P>
+                            <P>Marca: Chevlon</P>
+                            <p>Caballos de fuerza: 0.5/5</p>
+                            <p>Velocidad maxima: 74 mph (119 KM/H)</p>
+                            <p>Tipo: normal</p>
+                            <p>Capacidad de combustible: 14 gal (52.9 L)</p>
+                            <p>Contraparte de la vida real: 1994 Chevrolet Impala SS</p>
+                            <p>fecha de presentación: Enero 2, 2019</p>
+                            <p>Actualización del modelo: Febrero 21, 2020
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section class="container-related-products">
+			<h2>Imagenes del auto</h2>
+			<div class="image-gallery">
+				<img src="imagenes/WhatsApp Image 2023-06-16 at 6.42.21 PM (1).jpg" alt="Imagen 1" onclick="showImage('imagenes/WhatsApp Image 2023-06-16 at 6.42.21 PM (1).jpg')">
+				<img src="imagenes/WhatsApp Image 2023-06-16 at 11.44.24 PM.jpeg" alt="Imagen 2" onclick="showImage('imagenes/WhatsApp Image 2023-06-16 at 11.44.24 PM.jpeg')">
+				<img src="imagenes/WhatsApp Image 2023-06-16 at 11.43.36 PM.jpeg" alt="Imagen 3" onclick="showImage('imagenes/WhatsApp Image 2023-06-16 at 11.43.36 PM.jpeg')">
+				<img src="imagenes/WhatsApp Image 2023-06-16 at 11.43.59 PM.jpeg" alt="Imagen 4" onclick="showImage('imagenes/WhatsApp Image 2023-06-16 at 11.43.59 PM.jpeg')">
+			  </div>    
+		</section>
+
+		<footer>
+			<p>Footer</p>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>

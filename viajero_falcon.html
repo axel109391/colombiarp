@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Concesionario de Autos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .slider-container {
+      width: 500px;
+      overflow: hidden;
+    }
+    
+    .slider {
+      display: flex;
+      width: max-content;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider img {
+      width: 500px;
+      height: auto;
+    }
+
+    .image-slider {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.image-slider img {
+  display: inline-block;
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: auto;
+  margin-right: 10px;
+}
+
+  </style>
+  <script>
+    function slideLeft() {
+      const slider = document.getElementById("slider");
+      slider.style.transform = "translateX(-500px)";
+    }
+    
+    function slideRight() {
+      const slider = document.getElementById("slider");
+      slider.style.transform = "translateX(0)";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Concesionario</h1>
+  </header>
+  <main>
+    <h2>Viajero Falcon</h2>
+    <div class="info">
+      <p>Precio: $12,500</p>
+      <P>Tipo de vehiculo: SUV</P>
+      <P>Marca: Falcon</P>
+      <p>Caballos de fuerza: 1/5</p>
+      <p>Velocidad maxima: 128MPH (206 KM/H)</p>
+      <p>Tipo: normal</p>
+      <p>Capacidad de combustible: 14 gal (53.3 L)</p>
+      <p>Contraparte de la vida real: 2003 Ford Expedition</p>
+      <p>fecha de presentación: N/A</p>
+      <p>Actualización del modelo: September 14, 2019</p>
+    <div class="auto-info">
+      <!-- Información del auto -->
+    </div>
+    
+    <div class="image-gallery">
+      <img src="imagenes/viajero falcon portada.jpeg" alt="Imagen 1" onclick="showImage('imagenes/viajero falcon portada.jpeg')">
+      <img src="imagenes/viajero falcon delante.jpeg" alt="Imagen 2" onclick="showImage('imagenes/viajero falcon delante.jpeg')">
+      <img src="imagenes/viajero falcon izquierda.jpeg" alt="Imagen 3" onclick="showImage('imagenes/viajero falcon izquierda.jpeg')">
+      <img src="imagenes/viajero falcon atras.jpeg" alt="Imagen 4" onclick="showImage('imagenes/viajero falcon atras.jpeg')">
+      <img src="imagenes/viajero falcon derecha.jpeg" alt="Imagen 3" onclick="showImage('imagenes/viajero falcon derecha.jpeg')">
+    </div>       
+  </main>
+</body>
+</html>

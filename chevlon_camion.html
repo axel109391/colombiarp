@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Concesionario de Autos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .slider-container {
+      width: 500px;
+      overflow: hidden;
+    }
+    
+    .slider {
+      display: flex;
+      width: max-content;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider img {
+      width: 500px;
+      height: auto;
+    }
+
+    .image-slider {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.image-slider img {
+  display: inline-block;
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: auto;
+  margin-right: 10px;
+}
+
+  </style>
+  <script>
+    function slideLeft() {
+      const slider = document.getElementById("slider");
+      slider.style.transform = "translateX(-500px)";
+    }
+    
+    function slideRight() {
+      const slider = document.getElementById("slider");
+      slider.style.transform = "translateX(0)";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Concesionario</h1>
+  </header>
+  <main>
+    <h2>2002 Chevlon Camion</h2>
+    <div class="info">
+      <p>Precio: $8,900</p>
+      <P>Tipo de vehiculo: SUV</P>
+      <P>Marca: Chevlon</P>
+      <p>Caballos de fuerza: 1/5</p>
+      <p>Velocidad maxima: 98 mph (157.7 KM/H)</p>
+      <p>Tipo: normal</p>
+      <p>Capacidad de combustible: 13 Gal (49.2 L)</p>
+      <p>Contraparte de la vida real: 2002 Chevrolet Tahoe LT 4WD</p>
+      <p>fecha de presentación: Enero 17, 2019</p>
+      <p>Actualización del modelo: Mayo 14, 2021</p>
+    <div class="auto-info">
+      <!-- Información del auto -->
+    </div>
+    
+    <div class="image-gallery">
+      <img src="imagenes/chevlon camion portada.jpeg" alt="Imagen 1" onclick="showImage('imagenes/chevlon camion portada.jpeg')">
+      <img src="imagenes/chevlon camion de frente.jpeg" alt="Imagen 2" onclick="showImage('imagenes/chevlon camion de frente.jpeg')">
+      <img src="imagenes/chevlon camion izquierda.jpeg" alt="Imagen 3" onclick="showImage('imagenes/chevlon camion izquierda.jpeg')">
+      <img src="imagenes/chevlon camion atras.jpeg" alt="Imagen 4" onclick="showImage('imagenes/chevlon camion atras.jpeg')">
+      <img src="imagenes/chevlon camion derecha.jpeg" alt="Imagen 3" onclick="showImage('imagenes/chevlon camion derecha.jpeg')">
+    </div>       
+  </main>
+</body>
+</html>

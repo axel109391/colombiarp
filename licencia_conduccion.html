@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Licencia de Conduccion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #578bbe;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333333;
+    }
+    
+    form {
+      max-width: 400px;
+      margin-top: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333333;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    
+    select,
+    input[type="text"].otra-nacionalidad {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+    
+    .otra-nacionalidad {
+      display: none;
+    }
+    
+    input[type="submit"] {
+      background-color: #0066cc;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #0052a3;
+    }
+  </style>
+  </script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7ELWMGJWGN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7ELWMGJWGN');
+</script>
+<body>
+  <h1>Licencia de conduccion</h1>
+
+  <form id="licencia-form">
+    <label for="nombre_completo">Nombre completo:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="numero_de_dni">Numero de DNI</label>
+    <input type="number" id="altura" name="altura" required>
+
+    <label for="Correo">Correo:</label>
+    <input type="text" id="Ocupacion" name="Ocupacion" required>
+
+    <label for="Edad">Edad:</label>
+    <input type="number" id="Edad" name="Edad" required>
+
+    <label for="Numero_de_telefono">Numero de telefono</label>
+    <input type="number" id="altura" name="altura" required>
+
+    <!-- Agregar los demás campos del formulario -->
+
+    >
+
+    <button type="submit">Solicitar licencia</button>
+  </form>
+</body>
+</html>

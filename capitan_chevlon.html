@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Concesionario de Autos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .slider-container {
+      width: 500px;
+      overflow: hidden;
+    }
+    
+    .slider {
+      display: flex;
+      width: max-content;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .slider img {
+      width: 500px;
+      height: auto;
+    }
+
+    .image-slider {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.image-slider img {
+  display: inline-block;
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: auto;
+  margin-right: 10px;
+}
+
+  </style>
+  <script>
+    function slideLeft() {
+      const slider = document.getElementById("slider");
+      slider.style.transform = "translateX(-500px)";
+    }
+    
+    function slideRight() {
+      const slider = document.getElementById("slider");
+      slider.style.transform = "translateX(0)";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Concesionario</h1>
+  </header>
+  <main>
+    <h2>Capitan Chevlon</h2>
+    <div class="info">
+      <p>Precio: $11,850</p>
+      <P>Tipo de vehiculo: Carro</P>
+      <P>Marca: Chevlon</P>
+      <p>Caballos de fuerza: 0.75/5</p>
+      <p>Velocidad maxima: 	111 MPH (257 KM/H)</p>
+      <p>Tipo: normal</p>
+      <p>Capacidad de combustible: 15 gal (56.7 L)</p>
+      <p>Contraparte de la vida real: Holden WM Caprice</p>
+      <p>fecha de presentación: Junio 7, 2020</p>
+    <div class="auto-info">
+      <!-- Información del auto -->
+    </div>
+    
+    <div class="image-gallery">
+      <img src="imagenes/capitan chevoln portada.jpeg" alt="Imagen 1" onclick="showImage('imagenes/capitan chevoln portada.jpeg')">
+      <img src="imagenes/capitan chevlon de frente.jpeg" alt="Imagen 2" onclick="showImage('imagenes/capitan chevlon de frente.jpeg')">
+      <img src="imagenes/capitan chevlon izquierda.jpeg" alt="Imagen 3" onclick="showImage('imagenes/capitan chevlon izquierda.jpeg')">
+      <img src="imagenes/capitan chevlon atras.jpeg" alt="Imagen 4" onclick="showImage('imagenes/capitan chevlon atras.jpeg')">
+      <img src="imagenes/capitan chevlon derecha.jpeg" alt="Imagen 3" onclick="showImage('imagenes/capitan chevlon derecha.jpeg')">
+    </div>       
+  </main>
+</body>
+</html>

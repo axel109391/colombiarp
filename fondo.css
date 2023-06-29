@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(to bottom, #ffffff, #acb7c3);
+  font-family: "Arial", sans-serif;
+}
+
+.box {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-family: "Verdana", sans-serif;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(185, 35, 35, 0.5);
+  border-bottom: 2px solid #e93c3c;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-family: "Times New Roman", serif;
+}
+
+.image {
+  filter: blur(5px);
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #18191b;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
